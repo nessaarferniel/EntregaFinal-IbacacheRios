@@ -1,3 +1,19 @@
+/* Variables*/
+body {
+  background-color: #e0f5ed;
+}
 
+/*header*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .logo {
+  width: 450px;
+}
+header .titulo {
+  width: 800px;
+}
 
 /*# sourceMappingURL=style.css.map */
