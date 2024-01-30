@@ -16,4 +16,176 @@ header .titulo {
   width: 800px;
 }
 
+/*index*/
+.media {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.media .imagen1 {
+  flex-wrap: wrap;
+  align-self: center;
+  width: 700px;
+  height: 550px;
+  padding: 10px;
+  grid-area: imagen1;
+}
+.media h1 {
+  color: #1e3736;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 25px;
+}
+.media .texto1 {
+  color: #25615e;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+.media .texto1 {
+  grid-area: texto1;
+}
+
+.texto2 {
+  color: #25615e;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  grid-area: texto2;
+}
+
+/*Servicioss*/
+.texto3 {
+  text-align: center;
+  color: #2c615f;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 40px;
+}
+
+h2 {
+  color: #1e3736;
+  font-size: 34px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.textoservicios {
+  color: #2c615f;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h3 {
+  color: #1e3736;
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 16px;
+}
+
+/*Tienda*/
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: #1e3736;
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.productostienda {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+/*Contacto*/
+main {
+  text-align: center;
+}
+main .mapa {
+  display: flex;
+  display: inline;
+  padding: 20px;
+  margin: 20px;
+}
+main .form {
+  color: #1e3736;
+  font-size: 19px;
+  font-family: "Oswald", sans-serif;
+}
+main .nomcor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .nomcor .form {
+  padding: 9px;
+}
+main .mss {
+  padding: 22px;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+}
+footer .redescontacto {
+  color: #1e3736;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+footer .h2index {
+  color: #201106;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+}
+footer .instaindex {
+  width: 45px;
+  height: 45px;
+  grid-template-columns: instaindex;
+}
+footer .h2index {
+  text-align: center;
+  grid-area: h2index;
+}
+footer h3 {
+  color: #1e3736;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+footer .footer {
+  color: #1e3736;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+}
+
+@media (max-width: 500px) {
+  .imagen1 {
+    display: flex;
+    text-align: center;
+  }
+  .imagen1 .media {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
