@@ -15,6 +15,15 @@ body   {
 
 }
 
+
+/*NAVBAR*/
+
+.nav-item {
+    background-color: #2c615f;
+}
+
+
+
 header {
     
     .logo {
@@ -89,6 +98,18 @@ header {
 
 /*Servicioss*/
 
+.listaservicios {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+    
+}
+
+
+
 
 .texto3 {
     text-align: center;
@@ -132,6 +153,7 @@ h3 {
 
 
 /*Tienda*/
+
 
 h1{
     text-align: center;
