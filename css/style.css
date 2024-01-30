@@ -1,4 +1,6 @@
 /* Variables*/
+/*maps*/
+/*mixin*/
 body {
   background-color: #e0f5ed;
 }
@@ -7,6 +9,21 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+/*NAVBAR*/
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+  color: #e0f5ed;
+}
+
+.navbar {
+  background-color: #54908e;
+  padding: 9px 180px;
+  margin: 0px;
+  border: 0px;
 }
 
 header .logo {
@@ -32,17 +49,15 @@ header .titulo {
 }
 .media h1 {
   color: #1e3736;
-  font-size: 40px;
   font-family: "Oswald", sans-serif;
+  font-size: 40px;
   font-weight: bold;
-  padding: 25px;
 }
 .media .texto1 {
   color: #25615e;
-  font-size: 20px;
   font-family: "Oswald", sans-serif;
+  font-size: 20px;
   font-weight: bold;
-  padding: 20px;
 }
 .media .texto1 {
   grid-area: texto1;
@@ -50,44 +65,47 @@ header .titulo {
 
 .texto2 {
   color: #25615e;
-  font-size: 22px;
   font-family: "Oswald", sans-serif;
+  font-size: 22px;
   font-weight: bold;
-  grid-area: texto2;
 }
 
 /*Servicioss*/
+.listaservicios {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
 .texto3 {
   text-align: center;
-  color: #2c615f;
-  font-size: 22px;
+  color: #25615e;
   font-family: "Oswald", sans-serif;
+  font-size: 22px;
   font-weight: bold;
-  padding: 40px;
 }
 
 h2 {
   color: #1e3736;
-  font-size: 34px;
   font-family: "Oswald", sans-serif;
+  font-size: 34px;
   font-weight: bold;
-  padding: 16px;
 }
 
 .textoservicios {
   color: #2c615f;
-  font-size: 20px;
   font-family: "Oswald", sans-serif;
+  font-size: 28px;
   font-weight: bold;
-  padding: 10px;
 }
 
 h3 {
   color: #1e3736;
-  font-size: 50px;
   font-family: "Oswald", sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  padding: 16px;
 }
 
 /*Tienda*/
@@ -97,10 +115,9 @@ h1 {
 
 h1 {
   color: #1e3736;
-  font-size: 50px;
   font-family: "Oswald", sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  padding: 16px;
 }
 
 .productostienda {
@@ -109,6 +126,24 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
+}
+
+.card {
+  background-color: #2c615f;
+}
+
+.card-body {
+  color: #e0f5ed;
+}
+
+.btn-primary {
+  border: #25615e;
+  color: #e0f5ed;
+  background-color: #54908e;
+}
+
+.btn-primary:hover {
+  background-color: #085f3d;
 }
 
 /*Contacto*/
@@ -123,8 +158,9 @@ main .mapa {
 }
 main .form {
   color: #1e3736;
-  font-size: 19px;
   font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
 }
 main .nomcor {
   display: flex;
@@ -144,16 +180,17 @@ footer {
   text-align: center;
 }
 footer .redescontacto {
-  color: #1e3736;
-  font-size: 30px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
   text-align: center;
+  color: #1e3736;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 footer .h2index {
   color: #201106;
-  font-size: 36px;
   font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
 }
 footer .instaindex {
   width: 45px;
@@ -166,14 +203,15 @@ footer .h2index {
 }
 footer h3 {
   color: #1e3736;
-  font-size: 16px;
   font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 footer .footer {
   color: #1e3736;
-  font-size: 16px;
   font-family: "Oswald", sans-serif;
-  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {

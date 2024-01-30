@@ -1,9 +1,32 @@
 /* Variables*/
 
+$fuente:'Oswald', sans-serif;
+$coloroscuro: #1e3736;
+$masclaro:#e0f5ed;
+
+/*maps*/
+
+$colors: (
+  verdeoscuroclaro: #25615e,
+  verdeoscuro2:#085f3d,
+  verdeclaro:#54908e,
+
+);
+
+/*mixin*/
+
+@mixin carfuentes( $size ,$font,$weight ){
+font-family: $font;
+font-size: $size;
+font-weight: $weight
+}
+
+
+
 
 
 body   {
-    background-color: #e0f5ed;
+    background-color: $masclaro;
 
 }
 
@@ -19,8 +42,19 @@ body   {
 /*NAVBAR*/
 
 .nav-item {
-    background-color: #2c615f;
+    display: flex;
+    justify-content: space-around;
+    font-family: $fuente;
+    color: $masclaro;
 }
+
+.navbar {
+    background-color: #54908e;
+    padding: 9px 180px;
+    margin: 0px;
+    border:0px;
+}
+
 
 
 
@@ -58,21 +92,14 @@ header {
     }
 
     h1{
-        color: #1e3736;
-        font-size: 40px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        padding: 25px;
-    
+        color: $coloroscuro;
+        @include carfuentes(40px,$fuente,bold )
     
     }
 
     .texto1 {
-        color: #25615e;
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        padding: 20px;
+        color:map-get($colors, verdeoscuroclaro);
+        @include carfuentes(20px,$fuente,bold)
     }
 
     .texto1 {
@@ -84,13 +111,9 @@ header {
 }
 
 .texto2 {
-         color: #25615e;
-        font-size: 22px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        grid-area: texto2;
-       
-
+    color:map-get($colors, verdeoscuroclaro);
+     @include carfuentes(22px,$fuente,bold)
+        
 }
 
 
@@ -113,41 +136,27 @@ header {
 
 .texto3 {
     text-align: center;
-    color: #2c615f;
-    font-size: 22px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 40px;
-  
+    color:map-get($colors, verdeoscuroclaro);
+    @include carfuentes(22px,$fuente,bold )
+    
 }
 
 
-
 h2 {
-    color: #1e3736;
-    font-size: 34px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 16px;
-
+    color: $coloroscuro;
+    @include carfuentes(34px,$fuente ,bold )
+   
 }
     
 .textoservicios {
     color: #2c615f;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 10px;
+    @include carfuentes(28px,$fuente ,bold )
     
-
 }
 
 h3 {
-    color: #1e3736;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 16px;
+    color: $coloroscuro;
+    @include carfuentes(50px,$fuente ,bold )
 
 }
 
@@ -161,11 +170,9 @@ h1{
 }
 
 h1 {
-    color: #1e3736;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 16px;
+    color:$coloroscuro;
+    @include carfuentes(50px,$fuente ,bold )
+    
 }
 .productostienda {
     display: flex;
@@ -175,7 +182,24 @@ h1 {
     align-items: baseline;
 }
 
+.card {
+    background-color: #2c615f;
+}
 
+.card-body {
+    color:$masclaro;
+}
+
+.btn-primary {
+    border: #25615e;
+    color:$masclaro;
+    background-color: #54908e;
+
+}
+
+.btn-primary:hover {
+    background-color: #085f3d;
+}
 /*Contacto*/
 
 main {
@@ -189,9 +213,8 @@ main {
         
     }
     .form {
-        color: #1e3736;
-        font-size: 19px;
-        font-family: 'Oswald', sans-serif;
+        color:$coloroscuro;
+        @include carfuentes(19px,$fuente ,bold )
     
     }
     .nomcor {
@@ -226,17 +249,15 @@ footer {
     text-align: center;
 
     .redescontacto {
-     color: #1e3736;
-     font-size: 30px;
-     font-family: 'Oswald', sans-serif;
-     font-weight: bold;
      text-align: center;
+     color: $coloroscuro;
+     @include carfuentes(30px,$fuente ,bold )
+     
     }
 
     .h2index {
         color: #201106;
-        font-size: 36px;
-        font-family: 'Oswald', sans-serif;
+        @include carfuentes(36px,$fuente ,bold )
     }
     
     .instaindex {
@@ -253,18 +274,14 @@ footer {
     }
 
     h3 {
-        color: #1e3736;
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
+        color:$coloroscuro;
+        @include carfuentes(16px,$fuente ,bold )
+        
     }
 
     .footer  {
-        color: #1e3736;
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
-        list-style: none;
-        
-
+        color:$coloroscuro;
+        @include carfuentes(16px,$fuente ,bold )
 
 }
 
