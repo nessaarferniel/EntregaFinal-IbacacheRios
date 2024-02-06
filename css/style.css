@@ -1,5 +1,88 @@
-/* Variables*/
+/*navbar*/
+header {
+  background-color: #e0f5ed;
+}
+
+.container-fluid {
+  background-color: #5ea4a2;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+  color: #e0f5ed;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary .navbar {
+  background-color: #54908e;
+}
+
+.navbar {
+  background-color: #5ea4a2;
+  padding-top: 0cap;
+  padding-bottom: 0cap;
+}
+
+header .logo {
+  width: 450px;
+}
+header .titulo {
+  width: 800px;
+}
+
 /*maps*/
+/*maps*/
+/*media queries*/
+@media (max-width: 400px) {
+  .logofilo {
+    max-width: 400px;
+    height: auto;
+  }
+  .filotext {
+    font-size: 15px;
+    padding: 100px;
+  }
+  /* servicios*/
+  .fotodes .fotoserv {
+    height: 250px;
+    width: 250px;
+  }
+  .fotodes .listaser h1 {
+    font-size: 35px;
+  }
+  .fotodes .listaser p {
+    font-size: 20px;
+  }
+}
+/*inicio*/
+.titulo {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen1 {
+  flex-wrap: wrap;
+  align-self: center;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+}
+
+@media (max-width: 1290px) {
+  /* servicios*/
+  .fotodes .fotoserv {
+    height: 350px;
+    width: 350px;
+  }
+  .fotodes .listaser h1 {
+    font-size: 45px;
+  }
+  .fotodes .listaser p {
+    font-size: 30px;
+  }
+}
+/*variables*/
 /*mixin*/
 body {
   background-color: #e0f5ed;
@@ -9,28 +92,6 @@ body {
 * {
   margin: 0;
   padding: 0;
-}
-
-/*NAVBAR*/
-.nav-item {
-  display: flex;
-  justify-content: space-around;
-  font-family: "Oswald", sans-serif;
-  color: #e0f5ed;
-}
-
-.navbar {
-  background-color: #54908e;
-  padding: 9px 180px;
-  margin: 0px;
-  border: 0px;
-}
-
-header .logo {
-  width: 450px;
-}
-header .titulo {
-  width: 800px;
 }
 
 /*index*/
@@ -61,6 +122,7 @@ header .titulo {
 }
 .media .texto1 {
   grid-area: texto1;
+  padding: 30px;
 }
 
 .texto2 {
@@ -71,41 +133,71 @@ header .titulo {
 }
 
 /*Servicioss*/
-.listaservicios {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
+.fotopatrones {
+  max-width: 100%;
+  height: auto;
 }
 
 .texto3 {
   text-align: center;
   color: #25615e;
   font-family: "Oswald", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #1e3736;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: none;
+}
+
+.textoservicios {
+  color: #2c615f;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
   font-weight: bold;
 }
 
 h2 {
   color: #1e3736;
   font-family: "Oswald", sans-serif;
-  font-size: 34px;
+  font-size: 60px;
   font-weight: bold;
 }
 
-.textoservicios {
-  color: #2c615f;
-  font-family: "Oswald", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
+.fotoserv {
+  height: 450px;
+  width: 450px;
 }
 
-h3 {
-  color: #1e3736;
-  font-family: "Oswald", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
+.listaservicios {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.fotodes {
+  display: flex;
+  flex-direction: row;
+}
+
+.listaser {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.listaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Tienda*/
@@ -130,6 +222,7 @@ h1 {
 
 .card {
   background-color: #2c615f;
+  margin: 20px;
 }
 
 .card-body {
@@ -144,6 +237,10 @@ h1 {
 
 .btn-primary:hover {
   background-color: #085f3d;
+}
+
+.card-text {
+  font-size: 18px;
 }
 
 /*Contacto*/
@@ -173,6 +270,28 @@ main .nomcor .form {
 }
 main .mss {
   padding: 22px;
+}
+
+/*filosofia*/
+.logofilo {
+  height: 700px;
+  width: auto;
+}
+
+.divfilo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 50px;
+}
+
+.filotext {
+  font-size: 30px;
+  padding: 100px;
 }
 
 /*Footer*/
@@ -209,21 +328,10 @@ footer h3 {
 }
 footer .footer {
   color: #1e3736;
+  list-style: none;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: bold;
-}
-
-@media (max-width: 500px) {
-  .imagen1 {
-    display: flex;
-    text-align: center;
-  }
-  .imagen1 .media {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

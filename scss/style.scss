@@ -1,17 +1,23 @@
-/* Variables*/
+/*navbar*/
+@import "./partials/navbar";
+/*maps*/
+@import "./partials/maps";
+
+/*media queries*/
+@import "./media-queries/media400";
+@import "./media-queries/media1200";
+
+
+
+
+/*variables*/
 
 $fuente:'Oswald', sans-serif;
 $coloroscuro: #1e3736;
 $masclaro:#e0f5ed;
 
-/*maps*/
 
-$colors: (
-  verdeoscuroclaro: #25615e,
-  verdeoscuro2:#085f3d,
-  verdeclaro:#54908e,
 
-);
 
 /*mixin*/
 
@@ -36,38 +42,6 @@ body   {
     margin: 0;
     padding: 0;
 
-}
-
-
-/*NAVBAR*/
-
-.nav-item {
-    display: flex;
-    justify-content: space-around;
-    font-family: $fuente;
-    color: $masclaro;
-}
-
-.navbar {
-    background-color: #54908e;
-    padding: 9px 180px;
-    margin: 0px;
-    border:0px;
-}
-
-
-
-
-header {
-    
-    .logo {
-        width: 450px;
-    }
-    .titulo {
-        width: 800px;
-    }
-    
-    
 }
 
 
@@ -102,8 +76,10 @@ header {
         @include carfuentes(20px,$fuente,bold)
     }
 
+
     .texto1 {
         grid-area: texto1;
+        padding: 30px;
 
     
     }
@@ -121,46 +97,74 @@ header {
 
 /*Servicioss*/
 
-.listaservicios {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  align-items: baseline;
-
-    
+.fotopatrones {
+   max-width: 100%;
+   height: auto;
 }
-
-
-
 
 .texto3 {
     text-align: center;
     color:map-get($colors, verdeoscuroclaro);
-    @include carfuentes(22px,$fuente,bold )
+    @include carfuentes(20px,$fuente,bold )
     
 }
 
 
-h2 {
+h1 {
     color: $coloroscuro;
-    @include carfuentes(34px,$fuente ,bold )
+    @include carfuentes(50px,$fuente ,bold )
    
+}
+
+p{
+    @include carfuentes(35px,$fuente ,none )
+    
+
 }
     
 .textoservicios {
     color: #2c615f;
-    @include carfuentes(28px,$fuente ,bold )
+    @include carfuentes(35px,$fuente ,bold )
     
 }
 
-h3 {
+h2 {
     color: $coloroscuro;
-    @include carfuentes(50px,$fuente ,bold )
+    @include carfuentes(60px,$fuente ,bold )
 
 }
 
+.fotoserv {
+    height: 450px;
+    width: 450px;
+   
+}
 
+.listaservicios {
+    display: grid;
+    grid-template-columns: auto;
+}  
+
+.fotodes {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.listaser {
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.listaser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
 /*Tienda*/
 
 
@@ -182,8 +186,11 @@ h1 {
     align-items: baseline;
 }
 
+
 .card {
     background-color: #2c615f;
+    margin: 20px;
+   
 }
 
 .card-body {
@@ -199,6 +206,10 @@ h1 {
 
 .btn-primary:hover {
     background-color: #085f3d;
+}
+
+.card-text {
+    font-size: 18px;
 }
 /*Contacto*/
 
@@ -235,10 +246,31 @@ main {
    
 }
 
+/*filosofia*/
 
-    
+.logofilo{
+    height: 700px;
+    width: auto;
+}
 
 
+.divfilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 50px;
+}
+
+.filotext {
+    font-size: 30px;
+    padding: 100px;
+}
+
+ 
 
 
 
@@ -281,31 +313,13 @@ footer {
 
     .footer  {
         color:$coloroscuro;
+        list-style: none;
         @include carfuentes(16px,$fuente ,bold )
 
 }
 
 }
 
-@media (max-width: 500px){
 
-    .imagen1 {
-        display: flex;
-        text-align: center;
-      
-
-    .media {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-    }
-
-    
-}
-
-
-    
-}
 
 
