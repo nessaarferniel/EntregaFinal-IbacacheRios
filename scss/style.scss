@@ -7,27 +7,12 @@
 @import "./media-queries/media400";
 @import "./media-queries/media1200";
 
-
-
-
 /*variables*/
-
-$fuente:'Oswald', sans-serif;
-$coloroscuro: #1e3736;
-$masclaro:#e0f5ed;
-
-
-
-
+@import "./partials/variables";
 
 /*mixin*/
 
-@mixin carfuentes( $size ,$font,$weight ){
-font-family: $font;
-font-size: $size;
-font-weight: $weight
-}
-
+@import "./partials/mixin";
 
 
 
@@ -117,7 +102,7 @@ h1 {
 }
 
 p{
-    @include carfuentes(30px,$fuente ,none )
+    @include carfuentes(25px,$fuente ,none )
     
 
 }
@@ -130,9 +115,13 @@ p{
 
 h2 {
     color: $coloroscuro;
-    @include carfuentes(35px,$fuente ,bold )
+    @include carfuentes(30px,$fuente ,bold )
 
 }
+
+
+
+
 
 .fotoserv {
     height: 450px;
@@ -295,12 +284,12 @@ footer {
 
     .h2index {
         color: #201106;
-        @include carfuentes(36px,$fuente ,bold )
+        @include carfuentes(30px,$fuente ,bold )
     }
     
     .instaindex {
     
-        width: 40px;height: 40px;
+        width: 30px;height: 30px;
         grid-template-columns: instaindex;
     }
     
@@ -320,7 +309,7 @@ footer {
     .footer  {
         color:$coloroscuro;
         list-style: none;
-        @include carfuentes(1px,$fuente ,bold )
+        @include carfuentes(9px,$fuente ,bold )
 
 }
 

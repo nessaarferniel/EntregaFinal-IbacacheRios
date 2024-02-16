@@ -1,6 +1,7 @@
 
 
-    
+
+
 
 
 
@@ -23,7 +24,7 @@
 
     .logofilo {
 
-        max-width: 400px;
+        max-width: 100%;
         height: auto;
             
     }
@@ -68,6 +69,15 @@
     
             
     
+        }
+
+        h2 {
+            font-size: 20px;
+
+        }
+
+        .p {
+            font-size: 15px;
         }
     }
     
@@ -124,4 +134,11 @@
     height: auto ;
  }
 
+}
+
+/*footer*/
+
+.instaindex {
+    width: 10px;height: 10px;
+   
 }

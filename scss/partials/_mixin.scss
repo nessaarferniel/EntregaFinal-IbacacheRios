@@ -1,0 +1,8 @@
+
+/*mixin*/
+
+@mixin carfuentes( $size ,$font,$weight ){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight
+    }

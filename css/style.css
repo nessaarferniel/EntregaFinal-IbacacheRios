@@ -44,7 +44,7 @@ header .titulo {
     height: auto;
   }
   .logofilo {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
   }
   .filotext {
@@ -61,6 +61,12 @@ header .titulo {
   }
   .listaservicios .fotodes .listaser p {
     font-size: 14px;
+  }
+  .listaservicios h2 {
+    font-size: 20px;
+  }
+  .listaservicios .p {
+    font-size: 15px;
   }
   /*inicio*/
   .titulo {
@@ -94,6 +100,12 @@ header .titulo {
     height: auto;
   }
 }
+/*footer*/
+.instaindex {
+  width: 10px;
+  height: 10px;
+}
+
 @media (max-width: 1290px) {
   /* servicios*/
   .fotodes .fotoserv {
@@ -108,6 +120,8 @@ header .titulo {
   }
 }
 /*variables*/
+/*variables*/
+/*mixin*/
 /*mixin*/
 body {
   background-color: #e0f5ed;
@@ -177,7 +191,7 @@ h1 {
 
 p {
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: none;
 }
 
@@ -191,7 +205,7 @@ p {
 h2 {
   color: #1e3736;
   font-family: "Oswald", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -335,12 +349,12 @@ footer .redescontacto {
 footer .h2index {
   color: #201106;
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
 }
 footer .instaindex {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   grid-template-columns: instaindex;
 }
 footer .h2index {
@@ -357,7 +371,7 @@ footer .footer {
   color: #1e3736;
   list-style: none;
   font-family: "Oswald", sans-serif;
-  font-size: 1px;
+  font-size: 9px;
   font-weight: bold;
 }
 
