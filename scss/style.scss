@@ -19,6 +19,7 @@ $masclaro:#e0f5ed;
 
 
 
+
 /*mixin*/
 
 @mixin carfuentes( $size ,$font,$weight ){
@@ -57,8 +58,8 @@ body   {
     .imagen1 {
         flex-wrap: wrap;
         align-self: center;
-        width: 700px;
-        height: 550px;
+        width: 500px;
+        height: 350px;
         padding: 10px;
         grid-area: imagen1;
         
@@ -73,13 +74,13 @@ body   {
 
     .texto1 {
         color:map-get($colors, verdeoscuroclaro);
-        @include carfuentes(20px,$fuente,bold)
+        @include carfuentes(17px,$fuente,bold)
     }
 
 
     .texto1 {
         grid-area: texto1;
-        padding: 30px;
+        padding: 18px;
 
     
     }
@@ -88,7 +89,7 @@ body   {
 
 .texto2 {
     color:map-get($colors, verdeoscuroclaro);
-     @include carfuentes(22px,$fuente,bold)
+     @include carfuentes(17px,$fuente,bold)
         
 }
 
@@ -112,25 +113,24 @@ body   {
 
 h1 {
     color: $coloroscuro;
-    @include carfuentes(50px,$fuente ,bold )
    
 }
 
 p{
-    @include carfuentes(35px,$fuente ,none )
+    @include carfuentes(30px,$fuente ,none )
     
 
 }
     
 .textoservicios {
     color: #2c615f;
-    @include carfuentes(35px,$fuente ,bold )
+    @include carfuentes(30px,$fuente ,bold )
     
 }
 
 h2 {
     color: $coloroscuro;
-    @include carfuentes(60px,$fuente ,bold )
+    @include carfuentes(35px,$fuente ,bold )
 
 }
 
@@ -262,12 +262,18 @@ main {
 }
 
 main {
-    padding: 50px;
+    padding: 30px;
+
 }
 
 .filotext {
-    font-size: 30px;
-    padding: 100px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.gafasfoto {
+    max-width: 100%;
+    height: auto ;
 }
 
  
@@ -283,7 +289,7 @@ footer {
     .redescontacto {
      text-align: center;
      color: $coloroscuro;
-     @include carfuentes(30px,$fuente ,bold )
+     @include carfuentes(20px,$fuente ,bold )
      
     }
 
@@ -294,7 +300,7 @@ footer {
     
     .instaindex {
     
-        width: 45px;height: 45px;
+        width: 40px;height: 40px;
         grid-template-columns: instaindex;
     }
     
@@ -307,14 +313,14 @@ footer {
 
     h3 {
         color:$coloroscuro;
-        @include carfuentes(16px,$fuente ,bold )
+        @include carfuentes(10px,$fuente ,bold )
         
     }
 
     .footer  {
         color:$coloroscuro;
         list-style: none;
-        @include carfuentes(16px,$fuente ,bold )
+        @include carfuentes(1px,$fuente ,bold )
 
 }
 

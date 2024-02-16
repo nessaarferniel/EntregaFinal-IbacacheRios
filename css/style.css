@@ -35,6 +35,14 @@ header .titulo {
 /*maps*/
 /*media queries*/
 @media (max-width: 400px) {
+  .titulo {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
   .logofilo {
     max-width: 400px;
     height: auto;
@@ -44,31 +52,48 @@ header .titulo {
     padding: 100px;
   }
   /* servicios*/
-  .fotodes .fotoserv {
-    height: 250px;
-    width: 250px;
+  .listaservicios .fotodes .fotoserv {
+    height: 150px;
+    width: 150px;
   }
-  .fotodes .listaser h1 {
-    font-size: 35px;
+  .listaservicios .fotodes .listaser h1 {
+    font-size: 16px;
   }
-  .fotodes .listaser p {
-    font-size: 20px;
+  .listaservicios .fotodes .listaser p {
+    font-size: 14px;
+  }
+  /*inicio*/
+  .titulo {
+    max-width: 100%;
+    height: auto;
+  }
+  .imagen1 {
+    max-width: 100%;
+    height: auto;
+  }
+  /*contacto*/
+  .mapa {
+    max-width: 100%;
+    height: auto;
+  }
+  textarea {
+    max-width: 100%;
+    height: auto;
+  }
+  .nomcor {
+    max-width: 100%;
+    height: auto;
+  }
+  /*filo*/
+  .logofilo {
+    max-width: 100%;
+    height: auto;
+  }
+  .gafasfoto {
+    max-width: 100%;
+    height: auto;
   }
 }
-/*inicio*/
-.titulo {
-  max-width: 100%;
-  height: auto;
-}
-
-.imagen1 {
-  flex-wrap: wrap;
-  align-self: center;
-  width: 400px;
-  height: auto;
-  padding: 10px;
-}
-
 @media (max-width: 1290px) {
   /* servicios*/
   .fotodes .fotoserv {
@@ -103,8 +128,8 @@ body {
 .media .imagen1 {
   flex-wrap: wrap;
   align-self: center;
-  width: 700px;
-  height: 550px;
+  width: 500px;
+  height: 350px;
   padding: 10px;
   grid-area: imagen1;
 }
@@ -117,18 +142,18 @@ body {
 .media .texto1 {
   color: #25615e;
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 .media .texto1 {
   grid-area: texto1;
-  padding: 30px;
+  padding: 18px;
 }
 
 .texto2 {
   color: #25615e;
   font-family: "Oswald", sans-serif;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -148,28 +173,25 @@ body {
 
 h1 {
   color: #1e3736;
-  font-family: "Oswald", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
 }
 
 p {
   font-family: "Oswald", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: none;
 }
 
 .textoservicios {
   color: #2c615f;
   font-family: "Oswald", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 h2 {
   color: #1e3736;
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -286,12 +308,17 @@ main .mss {
 }
 
 main {
-  padding: 50px;
+  padding: 30px;
 }
 
 .filotext {
-  font-size: 30px;
-  padding: 100px;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.gafasfoto {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Footer*/
@@ -302,7 +329,7 @@ footer .redescontacto {
   text-align: center;
   color: #1e3736;
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 footer .h2index {
@@ -312,8 +339,8 @@ footer .h2index {
   font-weight: bold;
 }
 footer .instaindex {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   grid-template-columns: instaindex;
 }
 footer .h2index {
@@ -323,14 +350,14 @@ footer .h2index {
 footer h3 {
   color: #1e3736;
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
 }
 footer .footer {
   color: #1e3736;
   list-style: none;
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 1px;
   font-weight: bold;
 }
 

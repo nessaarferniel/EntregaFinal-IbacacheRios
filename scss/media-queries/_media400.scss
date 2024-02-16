@@ -7,30 +7,49 @@
    
 
 
-    @media (max-width: 400px){
+@media (max-width: 400px){
 
-        .logofilo {
+        
+     .titulo {
 
-            max-width: 400px;
-            height: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logofilo {
+
+        max-width: 400px;
+        height: auto;
             
-        }
+    }
     
-        .filotext {
-            font-size: 15px;
-            padding: 100px;
+    .filotext {
+        font-size: 15px;
+        padding: 100px;
     
         }
 
         /* servicios*/
-    
-    
+
+
+
+    .listaservicios {
+
+
+        
+
         .fotodes {
+
+           
     
             .fotoserv {
-                height: 250px;
-                width: 250px;
-    
+                height: 150px;
+                width: 150px;
             }
     
             .listaser {
@@ -38,35 +57,71 @@
     
     
                 h1{
-                    font-size: 35px;
+                font-size: 16px;
                 }
+
                 p{
-                    font-size: 20px;
-            
+                font-size: 14px;
+             
                 }
             }
     
             
     
         }
+    }
     
         
-    }
+    
 
-/*inicio*/
 
-.titulo {
+
+   /*inicio*/
+
+ .titulo {
 
     max-width: 100%;
     height: auto;
-}
+ }
 
-.imagen1{
-    flex-wrap: wrap;
-        align-self: center;
-        width: 400px;
-        height: auto;
-        padding: 10px;
+ .imagen1 {
+    
+    max-width: 100%;
+    height: auto;
 
+
+ }
+
+
+ /*contacto*/
+
+ .mapa {
+    max-width: 100%;
+    height: auto ;
+ }
+
+ textarea{
+    max-width: 100%;
+    height: auto ;
+     
+ }
+
+ .nomcor {
+    max-width: 100%;
+    height: auto ;
+ }
+
+
+ /*filo*/
+
+ .logofilo {
+    max-width: 100%;
+    height: auto ;
+ }
+
+ .gafasfoto {
+    max-width: 100%;
+    height: auto ;
+ }
 
 }
