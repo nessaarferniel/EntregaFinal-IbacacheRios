@@ -44,8 +44,8 @@ header .titulo {
     height: auto;
   }
   .logofilo {
-    max-width: 100%;
-    height: auto;
+    max-height: 300px;
+    width: auto;
   }
   .filotext {
     font-size: 15px;
@@ -91,10 +91,6 @@ header .titulo {
     height: auto;
   }
   /*filo*/
-  .logofilo {
-    max-width: 100%;
-    height: auto;
-  }
   .gafasfoto {
     max-width: 100%;
     height: auto;
